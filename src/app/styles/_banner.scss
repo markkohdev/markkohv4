@@ -1,0 +1,24 @@
+// Banner styles
+section.banner {
+  margin-bottom: 30px;
+  padding: 1px 30px;
+  text-align: center;
+  background-size: cover;
+
+  color: $white;
+  text-shadow: 5px 5px 10px $black;
+
+  h1, h4 {
+    margin: 5px;
+  }
+  h1 { font-size: 3em; text-transform: uppercase;}
+  h4 { font-size: 2em; }
+
+  @media screen and (min-width: $break-medium) {
+    min-height: 400px;
+  }
+
+  &.home {
+    background-image: url("../assets/images/home/banner_home.jpg");
+  }
+}

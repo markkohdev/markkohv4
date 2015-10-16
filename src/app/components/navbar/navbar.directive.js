@@ -18,8 +18,10 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController(moment) {
+    function NavbarController() {
       var vm = this;
+
+      vm.test = "Test";
 
     }
   }
