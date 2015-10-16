@@ -12,8 +12,15 @@ Because as a student I only get 5 private ones and I ain't got any private info 
 ### v4?
 Yep.  I've owned Markkoh.net since I was just a wee lad (sophomore year of hike school).
 Since then, I've completely overhauled the site 3 times.
+The evolution:
 
-At some point (hopefully soon) I'll post the evolution in this here readme.
+##### v1 - [markkoh.net/v1](http://markkoh.net/v1)
+![v1](http://markkoh.net/v1/preview.jpg)
+
+##### v2 - [markkoh.net/v2](http://markkoh.net/v2)
+![v2](http://markkoh.net/v2/preview.jpg)
+
+#### v3 will arrive upon completion of v4
 
 
 #### How the heck do I run this thing?
