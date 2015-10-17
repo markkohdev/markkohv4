@@ -1,5 +1,5 @@
 // Banner styles
-section.banner {
+.banner {
   margin-bottom: 30px;
   padding: 1px 30px;
   text-align: center;
@@ -18,7 +18,5 @@ section.banner {
     min-height: 400px;
   }
 
-  &.home {
-    background-image: url("../assets/images/home/banner_home.jpg");
-  }
+  &.home { background-image: url("../assets/images/banners/home.jpg"); }
 }

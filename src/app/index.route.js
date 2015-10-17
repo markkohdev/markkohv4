@@ -20,9 +20,7 @@
       })
       .state('default.about', {
         url: '/about',
-        templateUrl: 'app/about/about.html',
-        controller: 'AboutController',
-        controllerAs: 'vm'
+        templateUrl: 'app/about/about.html'
       })
       .state('default.portfolio', {
         url: '/portfolio',
@@ -38,9 +36,7 @@
       })
       .state('default.contact', {
         url: '/contact',
-        templateUrl: 'app/contact/contact.html',
-        controller: 'ContactController',
-        controllerAs: 'vm'
+        templateUrl: 'app/contact/contact.html'
       })
       ;
 

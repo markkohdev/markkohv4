@@ -34,9 +34,8 @@ h5 {font-size: 1.1em; font-weight: bold;}
   flex-direction: row;
 }
 
-
-// Elements, yo
-@import 'banner';
+// Elements
+@import '../components/banner/banner';
 
 // Other shtuff
 @import 'material-icons';
