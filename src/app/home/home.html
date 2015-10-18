@@ -19,5 +19,14 @@
       </div>
     </div>
 
+    <!-- Lil portfolio preview action -->
+    <div layout="row" layout-align="center center">
+      <slick class="slider multiple-items" init-onload="true" infinite="true" slides-to-show=4 slides-to-scroll=4 data="vm.items">
+        <div ng-repeat="item in vm.items">
+          <img ng-src="{{item.images.frontpage}}" alt="{{item.name}}" title="{{item.name}}"/>
+        </div>
+      </slick>
+    </div>
+
 
 </div>

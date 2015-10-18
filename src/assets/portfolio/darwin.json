@@ -1,6 +1,7 @@
 {
     "name": "DARwIn-OP Humanoid Dance Synthesis",
     "start_date": "2013-02-01",
+    "end_date": "2013-12-06",
     "contributors": [
         {
             "name": "David Grunberg",
@@ -32,16 +33,18 @@
         "DARwIn-OP API"
     ],
     "images": {
-        "feature": "darwin.jpg",
-        "display": [
-            "darwin.jpg",
-            "darwin2.jpg",
-            "darwin3.jpg",
-            "darwin4.jpg",
-            "darwin5.jpg",
-            "darwin6.jpg",
-            "darwin7.jpg",
-            "darwin8.jpg"
+        "banner": "assets/images/portfolio/banner/darwin.jpg",
+        "frontpage": "assets/images/portfolio/frontpage/darwin.jpg",
+        "gallery": "assets/images/portfolio/gallery/darwin.jpg",
+        "feature": [
+            "assets/images/portfolio/images/darwin.jpg",
+            "assets/images/portfolio/images/darwin2.jpg",
+            "assets/images/portfolio/images/darwin3.jpg",
+            "assets/images/portfolio/images/darwin4.jpg",
+            "assets/images/portfolio/images/darwin5.jpg",
+            "assets/images/portfolio/images/darwin6.jpg",
+            "assets/images/portfolio/images/darwin7.jpg",
+            "assets/images/portfolio/images/darwin8.jpg"
         ]
     }
 }

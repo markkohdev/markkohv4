@@ -10,7 +10,7 @@
     var vm = this;
 
     portfolioService.getItems().then(function(items){
-        console.log(items);
+        vm.items = items;
     });
 
   }

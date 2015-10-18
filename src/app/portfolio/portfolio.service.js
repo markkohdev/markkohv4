@@ -9,10 +9,13 @@
   function portfolioService ($http, lodash, $q) {
     var portfolioService = {};
 
-    var baseUrl = 'portfolio/';
+    var baseUrl = 'assets/portfolio/';
 
     var itemList = [
-      'darwin'
+      'darwin',
+      'livenote',
+      'sigcom',
+      'dragonmap'
     ];
 
     portfolioService.getItem = function(itemName){
