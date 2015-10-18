@@ -18,8 +18,10 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController($state, $rootScope, lodash) {
+    function NavbarController($state, $rootScope, lodash, $mdMedia) {
       var vm = this;
+
+      vm.mdMedia = $mdMedia;
 
       vm.pages = [
         {
@@ -56,7 +58,7 @@
 
       function setCurrent(state) {
         lodash.forEach(vm.pages, function(page) {
-          if (state.name == page.state){
+          if (state.name.startsWith(page.state)){
             page.current = true;
           }
           else {

@@ -6,8 +6,12 @@
     .controller('HomeController', HomeController);
 
   /** @ngInject */
-  function HomeController() {
-    // var vm = this;
+  function HomeController(portfolioService) {
+    var vm = this;
+
+    portfolioService.getItems().then(function(items){
+        console.log(items);
+    });
 
   }
 })();

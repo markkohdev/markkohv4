@@ -1,10 +1,10 @@
-<md-toolbar class="navbar" layout="row" layout-align="center">
-  <div class="contain" layout="row" layout-align="center end">
-    <div flex="30">
-      <a ui-sref="default.home"><img class="logo" ng-src="../assets/images/general/logo.png" alt="logo" /></a>
+<md-toolbar class="navbar">
+  <div layout="column" layout-align="center center">
+    <div class="logo-container">
+      <a ui-sref="default.home"><img class="logo" ng-src="assets/images/general/logo.png" alt="logo" /></a>
     </div>
 
-    <section flex layout="row" layout-align="left center">
+    <section layout="row" layout-align="center center">
       <md-button ng-repeat="page in vm.pages" ui-sref="{{page.state}}" ng-class="{current: page.current}">{{page.name}}</md-button>
     </section>
   </div>
