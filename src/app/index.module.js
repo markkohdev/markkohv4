@@ -10,6 +10,7 @@
                         'ngResource',
                         'ui.router',
                         'ngMaterial',
-                        'toastr']);
+                        'toastr',
+                        'ngLodash']);
 
 })();

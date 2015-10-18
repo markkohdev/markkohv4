@@ -1,3 +1,15 @@
 md-toolbar.md-default-theme {
   background-color: $grey;
 }
+
+.navbar {
+
+    .logo {
+        max-width: 250px;
+    }
+
+    .current {
+        color: $blue;
+    }
+
+}

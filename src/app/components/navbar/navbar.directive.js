@@ -18,10 +18,53 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController() {
+    function NavbarController($state, $rootScope, lodash) {
       var vm = this;
 
-      vm.test = "Test";
+      vm.pages = [
+        {
+          name: 'Home',
+          state: 'default.home'
+        },
+        {
+          name: 'About',
+          state: 'default.about'
+        },
+        {
+          name: 'Portfolio',
+          state: 'default.portfolio'
+        },
+        {
+          name: 'Photography',
+          state: 'default.photography'
+        },
+        {
+          name: 'Contact',
+          state: 'default.contact'
+        }
+      ]
+
+      // On initial page load, set the current state
+      setCurrent($state.current);
+
+      // Also set it on stateChange
+      $rootScope.$on('$stateChangeSuccess',
+        function(event, toState, toParams, fromState, fromParams) {
+          setCurrent(toState);
+        }
+      );
+
+      function setCurrent(state) {
+        lodash.forEach(vm.pages, function(page) {
+          if (state.name == page.state){
+            page.current = true;
+          }
+          else {
+            page.current = false;
+          }
+        });
+
+      }
 
     }
   }
