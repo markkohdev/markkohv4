@@ -37,15 +37,8 @@
 
         // Once we've gotten all our items, do things with them!
         $q.all(promises).then( function(resolutions) {
-          var items = [];
-
-          // For each item that we got back, push the item to the items list
-          lodash.forEach(resolutions, function(resolution) {
-            items.push(resolution.data);
-          });
-
           // Resolve the original promise with all our fancy items!
-          resolve(items);
+          resolve(lodash.pluck(resolutions, 'data'));
         });
       });
 
