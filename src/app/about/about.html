@@ -1,6 +1,42 @@
 <div>
-    <banner banner-image="assets/images/banners/about.jpg">
-      <h1>About Me</h1>
-      <h4>Who is this guy?</h4>
-    </banner>
+  <banner banner-image="assets/images/banners/about.jpg">
+    <h1>About Me</h1>
+    <h4>Who is this guy?</h4>
+  </banner>
+
+  <!-- Some content here -->
+  <div layout="row">
+    <div flex="15" hide-sm></div>
+    <div layout="column" layout-align="center start" flex>
+
+    <!-- Section -->
+      <div layout="row">
+        <div flex="30" class="md-padding">
+          <img class="md-whiteframe-5dp" src="assets/images/about/me.jpg" alt="Mark at Niagara Falls!" title="Me at Niagara Falls woohoo!" layout-fill/>
+        </div>
+        <div flex="70">
+          <h3 class="md-display-title">The Gist</h3>
+          <p>
+            <b>A summary of me in 3 sentences:</b> I am a student at Drexel University studying Computer Science with a strong focus (and a minor) in Software Engineering.  My passion for development allows me to think outside of the box in order to come up with the best solution to a problem - whether it's taking a new approach to responsive design or making robots dance to music like humans do by using Markov-Chain algorithms.  All in all, I just love programming, development, and just about everything computer-related (and music, of course!).
+          </p>
+        </div>
+      </div>
+
+      <!-- Section -->
+      <div layout="row">
+        <div flex="70">
+          <h3 class="md-display-title">Where am I now?</h3>
+          <p>
+            I now attend Drexel University in Philadelphia, majoring in Computer Science with a minor in Software Engineering as well as concentrations in Data Structures and Algorithms, Human-Computer Interaction, and (you guessed it) Software Engineering.  Since my freshman year here at Drexel, I've been involved in research at the <a href="http://music.ece.drexel.edu" target="_blank">Music, Entertainment, Technology Laboratory (the MET-lab for short)</a>, a place where I can let my passion for music intersect with my love for development.  Feel free to read more about my work at the MET-lab in my <a ui-sref="default.portfolio">portfolio</a>!  Outside of my lab, I am constantly juggling side projects which I can't seem to stop thinking about.  When it comes down to it, I just really love doing too many things, and there need to be more hours in the day so I can actually spend time on all of them!
+          </p>
+        </div>
+        <div flex="30" class="float-right md-padding">
+          <a href="http://resume.markkoh.net"><img class="md-whiteframe-5dp" src="assets/images/about/resume.jpg" alt="My resume!" title="Click to check out my resume!" layout-fill/></a>
+        </div>
+      </div>
+
+
+    </div>
+    <div flex="15" hide-sm></div>
+  </div>
 </div>
