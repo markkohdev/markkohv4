@@ -28,6 +28,7 @@ h5 {font-size: 1.1em; font-weight: bold;}
 .contain {
   width: 100%;
   max-width: $break-large;
+  margin: 0 auto;
 }
 
 [layout=row] {

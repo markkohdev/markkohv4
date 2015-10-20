@@ -1,0 +1,21 @@
+<div class="portfolio-list">
+    <banner banner-image="assets/images/banners/portfolio.jpg">
+      <h1>My Portfolio</h1>
+      <h4>I'm a fan of side projects</h4>
+    </banner>
+
+    <div layout="column" layout-align="center center" class="contain">
+        <div ng-repeat="item in vm.items" layout-gt-sm="row" layout-sm="column" class="gallery-item">
+            <div>
+                <a ui-sref="default.portfolio.item({id: item.id})">
+                    <img class="gallery-image" ng-src="{{item.images.gallery}}" alt="{{item.id}}"/>
+                </a>
+            </div>
+            <div>
+                <h4>{{item.name}}</h4>
+                <p hide-sm>{{item.short_description}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>

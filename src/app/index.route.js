@@ -23,9 +23,20 @@
         templateUrl: 'app/about/about.html'
       })
       .state('default.portfolio', {
+        abstract: true,
         url: '/portfolio',
-        templateUrl: 'app/portfolio/portfolio.html',
-        controller: 'PortfolioController',
+        templateUrl: 'app/portfolio/portfolio.html'
+      })
+      .state('default.portfolio.list', {
+        url: '/',
+        templateUrl: 'app/portfolio/list.html',
+        controller: 'PortfolioListController',
+        controllerAs: 'vm'
+      })
+      .state('default.portfolio.item', {
+        url: '/portfolio/item/:id',
+        templateUrl: 'app/portfolio/item.html',
+        controller: 'PortfolioItemController',
         controllerAs: 'vm'
       })
       .state('default.photography', {

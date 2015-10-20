@@ -20,10 +20,8 @@
     </div>
 
     <div layout="row" layout-align="center center">
-      <div class="slider">
-        <div ng-repeat="item in vm.items track by $index">
-          <img ng-src="{{item.images.frontpage}}" alt="{{item.name}}" title="{{item.name}}"/>
-        </div>
+      <div ng-repeat="item in vm.items track by $index" class="md-padding">
+        <img ui-sref="default.portfolio.item({id: item.id})" ng-src="{{item.images.frontpage}}" alt="{{item.name}}" title="{{item.name}}"/>
       </div>
     </div>
 

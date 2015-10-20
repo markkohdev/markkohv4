@@ -34,7 +34,7 @@
         },
         {
           name: 'Portfolio',
-          state: 'default.portfolio'
+          state: 'default.portfolio.list'
         },
         {
           name: 'Photography',

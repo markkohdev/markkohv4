@@ -3,16 +3,15 @@
 
   angular
     .module('markkoh')
-    .controller('HomeController', HomeController);
+    .controller('PortfolioListController', PortfolioListController);
 
   /** @ngInject */
-  function HomeController(portfolioService, $element, $scope) {
+  function PortfolioListController($scope, portfolioService) {
     var vm = this;
 
     portfolioService.getItems().then(function(items){
         vm.items = items;
         $scope.$apply();
-        // $element.find('.slider')[0].slick();
     });
 
   }
