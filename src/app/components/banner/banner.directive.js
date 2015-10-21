@@ -23,7 +23,7 @@
     return directive;
 
     /** @ngInject */
-    function BannerController($scope) {
+    function BannerController() {
       var vm = this;
 
       vm.setBannerImage = function(image) {

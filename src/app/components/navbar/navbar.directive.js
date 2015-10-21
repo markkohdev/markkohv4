@@ -51,7 +51,7 @@
 
       // Also set it on stateChange
       $rootScope.$on('$stateChangeSuccess',
-        function(event, toState, toParams, fromState, fromParams) {
+        function(event, toState) {
           setCurrent(toState);
         }
       );
