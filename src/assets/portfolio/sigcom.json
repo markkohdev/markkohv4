@@ -18,24 +18,7 @@
         }
     ],
     "short_desc": "SIG.com is the external website for Susquehanna International Group (SIG) which I worked heavily on during the first few months of my co-op at SIG.  The site is written in ASP.NET WebForms using an object-oriented approach to web development.",
-    "long_desc": [
-        {
-            "section_name": "Introduction",
-            "content": "SIG.com (http://sig.com) was my first project which I was assigned while working at Susquehanna International Group during my first Co-Op.  The project involved working with a team of other developers, a Project Manager, the Marketing department, and the HR Department at SIG.  During the project, I was exposed to a lot of proper requirements elicitation, something which I hadn’t been exposed to previously beyond class.\nThe website was written in C# ASP.NET WebForms, which was a technology which I had never used before.  After just a week or two of playing around and getting used to the language and framework, I was already heavily involved in the development process.  My previous experience with CSS and HTML made me a useful resource in helping to move the project ahead in a timely fashion."
-        },
-        {
-            "section_name": "Object-Orientation",
-            "content": "One of the ideas which I brought to the project which helped to make the development process more efficient was the idea of object-oriented web development.  In case you are not familiar with ASP.NET WebForms, it utilizes something called “Master Pages” which are essentially templates for a given page which holds various “content areas” which you can fill in on a more granular level.  Instead of having one “Master Page” which every page derived from, I thought of using Master Pages and Sub-Master Pages as Base Classes and Sub Classes, allowing each page in a given section to derive from a “Section Master Page.” This allowed each page to be made in a much quicker manner, and allowed changes to a section or the whole site to easily ripple through each page, creating loose coupling between sections and their pages."
-        },
-        {
-            "section_name": "Responsive Design",
-            "content": "One other large initiative of the project was making the website mobile-friendly using responsive design - that is, as you resize your window, make the content adjust itself to continue to display in a readable way.  Since we needed to make sure the website was compatible all the way down to IE7, this became a challenge since IE7 did not support the standard CSS Media-Queries method of responsive design.  This challenged me to be creative, and I came up with a solution using jQuery.  While this method may not be quite as efficient as CSS Media-Queries, it allowed for much greater manipulation of the DOM (i.e: The content on the web page).  My custom jQuery code would detect when the screen was resized, and when a certain “breakpoint” was hit, the code would call any necessary methods to change the page to the desired layout.  This is one of the only places which I have seen this method used to implement responsive design on such a large scale."
-        },
-        {
-            "section_name": "Disclaimer",
-            "content": "I do not own any of the rights to SIG.com.  All rights to photos and code is reserved to Susquehanna International Group, LLP."
-        }
-    ],
+    "long_desc": "### Introduction\nSIG.com (http://sig.com) was my first project which I was assigned while working at Susquehanna International Group during my first Co-Op.  The project involved working with a team of other developers, a Project Manager, the Marketing department, and the HR Department at SIG.  During the project, I was exposed to a lot of proper requirements elicitation, something which I hadn’t been exposed to previously beyond class.\nThe website was written in C# ASP.NET WebForms, which was a technology which I had never used before.  After just a week or two of playing around and getting used to the language and framework, I was already heavily involved in the development process.  My previous experience with CSS and HTML made me a useful resource in helping to move the project ahead in a timely fashion.\n### Object-Orientation\nOne of the ideas which I brought to the project which helped to make the development process more efficient was the idea of object-oriented web development.  In case you are not familiar with ASP.NET WebForms, it utilizes something called “Master Pages” which are essentially templates for a given page which holds various “content areas” which you can fill in on a more granular level.  Instead of having one “Master Page” which every page derived from, I thought of using Master Pages and Sub-Master Pages as Base Classes and Sub Classes, allowing each page in a given section to derive from a “Section Master Page.” This allowed each page to be made in a much quicker manner, and allowed changes to a section or the whole site to easily ripple through each page, creating loose coupling between sections and their pages.\n### Responsive Design\nOne other large initiative of the project was making the website mobile-friendly using responsive design - that is, as you resize your window, make the content adjust itself to continue to display in a readable way.  Since we needed to make sure the website was compatible all the way down to IE7, this became a challenge since IE7 did not support the standard CSS Media-Queries method of responsive design.  This challenged me to be creative, and I came up with a solution using jQuery.  While this method may not be quite as efficient as CSS Media-Queries, it allowed for much greater manipulation of the DOM (i.e: The content on the web page).  My custom jQuery code would detect when the screen was resized, and when a certain “breakpoint” was hit, the code would call any necessary methods to change the page to the desired layout.  This is one of the only places which I have seen this method used to implement responsive design on such a large scale.\n#### Disclaimer\nI do not own any of the rights to SIG.com.  All rights to photos and code is reserved to Susquehanna International Group, LLP.",
     "languages": [
         "C#",
         "ASP.NET",
@@ -51,11 +34,11 @@
         "frontpage": "assets/images/portfolio/frontpage/sig.jpg",
         "gallery": "assets/images/portfolio/gallery/sig.jpg",
         "feature": [
-            "assets/images/portfolio/images/sig1.jpg",
-            "assets/images/portfolio/images/sig2.jpg",
-            "assets/images/portfolio/images/sig3.jpg",
-            "assets/images/portfolio/images/sig4.jpg",
-            "assets/images/portfolio/images/sig5.jpg"
+            "assets/images/portfolio/images/sig1",
+            "assets/images/portfolio/images/sig2",
+            "assets/images/portfolio/images/sig3",
+            "assets/images/portfolio/images/sig4",
+            "assets/images/portfolio/images/sig5"
         ]
     }
 }
