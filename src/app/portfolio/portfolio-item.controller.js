@@ -12,7 +12,7 @@
     vm.loaded = false;
     vm.id = $state.params.id;
 
-    portfolioService.getItem(vm.id).then(function(item){
+    portfolioService.getItem(vm.id, true).then(function(item){
         vm.item = item;
         // vm.setBannerImage(vm.item.images.banner);
         vm.loaded = true;
