@@ -1,8 +1,8 @@
 .portfolio-list {
     .gallery-item {
-        background-color: #444;
-        color: white !important;
-        overflow:hidden;
+        background-color: $grey;
+        color: $white !important;
+        overflow: hidden;
         border-radius: 5px;
         margin-bottom: 1.5em;
     }
@@ -10,5 +10,12 @@
     .gallery-image {
         border: 10px solid white;
         height: 354px;
+
+        img {
+            width: 100%;
+            background-size:cover !important;
+            -webkit-background-size:cover !important;
+            -moz-background-size:cover !important;
+        }
     }
 }

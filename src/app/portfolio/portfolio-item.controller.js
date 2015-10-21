@@ -6,10 +6,17 @@
     .controller('PortfolioItemController', PortfolioItemController);
 
   /** @ngInject */
-  function PortfolioItemController($state) {
+  function PortfolioItemController($state, $timeout, $scope, portfolioService) {
     var vm = this;
 
-    console.log($state.params.id)
+    vm.loaded = false;
+    vm.id = $state.params.id;
 
+    portfolioService.getItem(vm.id).then(function(item){
+        vm.item = item;
+        // vm.setBannerImage(vm.item.images.banner);
+        vm.loaded = true;
+        $scope.$apply();
+    });
   }
 })();

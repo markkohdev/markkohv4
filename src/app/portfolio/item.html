@@ -1,3 +1,13 @@
-<div>
-    
+<div ng-if="vm.loaded">
+    <banner banner-image="{{vm.item.images.banner}}">
+      <h1>{{vm.item.name}}</h1>
+    </banner>
+
+    <div class="contain">
+
+        <div marked="vm.item.long_desc">
+        </div>
+
+
+    </div>
 </div>

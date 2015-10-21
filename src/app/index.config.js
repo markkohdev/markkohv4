@@ -6,7 +6,7 @@
     .config(config);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig) {
+  function config($logProvider, toastrConfig, $mdThemingProvider) {
     // Enable log
     $logProvider.debugEnabled(true);
 
@@ -16,6 +16,19 @@
     toastrConfig.positionClass = 'toast-top-right';
     toastrConfig.preventDuplicates = true;
     toastrConfig.progressBar = true;
+
+    // Theming
+    // var markGrey = $mdThemingProvider.extendPalette('grey', {
+    //   'default': '444444'
+    // });
+    // $mdThemingProvider.definePalette('markGrey', markGrey);
+
+
+    // $mdThemingProvider.theme('default')
+    //   .primaryPalette('markGrey')
+    //   .accentPalette('blue')
+    //   .warnPalette('red')
+    //   .backgroundPalette('markGrey');
   }
 
 })();

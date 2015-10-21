@@ -4,18 +4,17 @@
       <h4>I'm a fan of side projects</h4>
     </banner>
 
-    <div layout="column" layout-align="center center" class="contain">
-        <div ng-repeat="item in vm.items" layout-gt-sm="row" layout-sm="column" class="gallery-item">
-            <div>
-                <a ui-sref="default.portfolio.item({id: item.id})">
-                    <img class="gallery-image" ng-src="{{item.images.gallery}}" alt="{{item.id}}"/>
-                </a>
-            </div>
-            <div>
-                <h4>{{item.name}}</h4>
-                <p hide-sm>{{item.short_description}}</p>
-            </div>
-        </div>
+    <div layout="column" layout-align="center start" class="contain">
+        <md-card ng-repeat="item in vm.items">
+            <a ui-sref="default.portfolio.item({id: item.id})">
+                <img ng-src="{{item.images.gallery}}" class="md-card-image" alt="{{item.id}}"/>
+            </a>
+            <md-card-content layout="column" layout-align="center end">
+                <h4 layout-fill>{{item.name}}</h4>
+                <p>{{item.short_desc}}</p>
+                <md-button class="md-raised md-primary" ui-sref="default.portfolio.item({id: item.id})">Read more...</md-button>
+            </md-card-content>
+        </md-card>
     </div>
 
 </div>

@@ -8,11 +8,14 @@ $break-small: 320px;
 $break-medium: 600px;
 $break-large: 950px;
 
-// Universal font stuff
+// Universal settings
 html {
   font-family: 'Palanquin', serif;
 }
 
+body, md-content {
+    background-color: $tan;
+}
 
 // Header definitions
 h1 {font-size: 2.5em; font-weight: bold;}

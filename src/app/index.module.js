@@ -11,7 +11,8 @@
                         'ui.router',
                         'ngMaterial',
                         'toastr',
-                        'ngLodash'
+                        'ngLodash',
+                        'hc.marked'
                         ]);
 
 })();

@@ -20,13 +20,17 @@
 
     portfolioService.getItem = function(itemName){
       var itemUrl = baseUrl + itemName + '.json';
-      var itemPromise = $http.get(itemUrl);
+      var itemPromise = new Promise( function(resolve) {
+        $http.get(itemUrl).then(function(response) {
+          // Pull the data out of the response and just return that
+          resolve(response.data);
+        });
+      });
 
       return itemPromise;
     };
 
     portfolioService.getItems = function() {
-
       // Create a promise that will resolve with all of the items
       var itemsPromise = new Promise( function(resolve) {
         // Create an empty list to wait on promises
@@ -41,7 +45,7 @@
         // Once we've gotten all our items, do things with them!
         $q.all(promises).then( function(resolutions) {
           // Resolve the original promise with all our fancy items!
-          resolve(lodash.pluck(resolutions, 'data'));
+          resolve(resolutions);
         });
       });
 
