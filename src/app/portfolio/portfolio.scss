@@ -19,3 +19,16 @@
         }
     }
 }
+
+.portfolio-item {
+    .photos {
+        .photo-container {
+            // max-height: 100px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

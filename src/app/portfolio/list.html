@@ -4,8 +4,8 @@
       <h4>I'm a fan of side projects</h4>
     </banner>
 
-    <div layout="column" layout-align="center start" class="contain">
-        <md-card ng-repeat="item in vm.items">
+    <div layout="row" layout-align="center start" class="contain" layout-wrap>
+        <md-card ng-repeat="item in vm.items" flex="45" flex-sm="90"=>
             <a ui-sref="default.portfolio.item({id: item.id})">
                 <img ng-src="{{item.images.gallery}}" class="md-card-image" alt="{{item.id}}"/>
             </a>

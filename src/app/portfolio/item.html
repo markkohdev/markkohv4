@@ -1,13 +1,20 @@
-<div ng-if="vm.loaded">
+<div ng-if="vm.loaded" class="portfolio-item">
     <banner banner-image="{{vm.item.images.banner}}">
       <h1>{{vm.item.name}}</h1>
     </banner>
 
     <div class="contain">
+        <md-button class="md-primary" ui-sref="default.portfolio.list">Back to all projects...</md-button>
 
         <div marked="vm.item.long_desc">
         </div>
 
+        <h4>Gallery</h4>
+        <div class="photos" layout="row" layout-wrap>
+            <div class="photo-container md-padding" ng-repeat="photo in vm.item.images.feature" flex="20">
+                <img class="md-whiteframe-2dp" ng-src="{{photo + '_1024.jpg'}}" alt="{{vm.id}}"/>
+            </div>
+        </div>
 
     </div>
 </div>
