@@ -13,7 +13,9 @@ md-toolbar {
     }
 
     .current {
-        color: $blue;
+        &, md-icon {
+            color: $blue !important;
+        }
     }
 
 }

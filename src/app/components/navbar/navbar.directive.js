@@ -18,33 +18,36 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController($state, $rootScope, lodash, $mdMedia) {
+    function NavbarController($state, $rootScope, lodash) {
       var vm = this;
-
-      vm.mdMedia = $mdMedia;
 
       vm.pages = [
         {
           name: 'Home',
-          state: 'default.home'
+          state: 'default.home',
+          icon: 'zmdi zmdi-home'
         },
         {
           name: 'About',
-          state: 'default.about'
+          state: 'default.about',
+          icon: 'zmdi zmdi-pin-account'
         },
         {
           name: 'Portfolio',
-          state: 'default.portfolio.list'
+          state: 'default.portfolio.list',
+          icon: 'zmdi zmdi-view-carousel'
         },
         {
           name: 'Photography',
-          state: 'default.photography'
+          state: 'default.photography',
+          icon: 'zmdi zmdi-collection-image'
         },
         {
           name: 'Contact',
-          state: 'default.contact'
+          state: 'default.contact',
+          icon: 'zmdi zmdi-phone'
         }
-      ]
+      ];
 
       // On initial page load, set the current state
       setCurrent($state.current);
@@ -65,8 +68,11 @@
             page.current = false;
           }
         });
-
       }
+
+      vm.openMenu = function($mdOpenMenu, ev) {
+        $mdOpenMenu(ev);
+      };
 
     }
   }

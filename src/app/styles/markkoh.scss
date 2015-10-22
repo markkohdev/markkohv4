@@ -11,6 +11,12 @@ $break-large: 950px;
 // Universal settings
 html {
   font-family: 'Palanquin', serif;
+  color: $black;
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
 }
 
 body, md-content {

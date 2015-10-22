@@ -1,11 +1,30 @@
 <md-toolbar class="navbar">
-  <div layout="column" layout-align="center center">
+  <div layout="column" layout-align="center center" layout-sm="row" layout-align-sm="space-between start">
     <div class="logo-container">
       <a ui-sref="default.home"><img class="logo" ng-src="assets/images/general/logo.png" alt="logo" /></a>
     </div>
 
-    <section layout="row" layout-align="center center">
-      <md-button ng-repeat="page in vm.pages" ui-sref="{{page.state}}" ng-class="{current: page.current}">{{page.name}}</md-button>
+    <!-- Normal menu -->
+    <section hide-sm layout="row" layout-align="center center">
+        <md-button ng-repeat="page in vm.pages" ui-sref="{{page.state}}" ng-class="{current: page.current}">
+            <md-icon class="{{page.icon}} zmdi-hc-lg"></md-icon>  {{page.name}}
+        </md-button>
+    </section>
+
+    <!-- Responsive menu -->
+    <section hide-gt-sm layout="row" layout-align="end start">
+        <md-menu>
+            <md-button ng-click="vm.openMenu($mdOpenMenu, $event)">
+                <i md-menu-origin class="zmdi zmdi-menu zmdi-hc-2x"></i>
+            </md-button>
+            <md-menu-content>
+                <md-menu-item ng-repeat="page in vm.pages">
+                    <md-button ui-sref="{{page.state}}">
+                        <md-icon md-menu-align-target class="{{page.icon}} zmdi-hc-lg"></md-icon> {{page.name}}
+                    </md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
     </section>
   </div>
 </md-toolbar>
