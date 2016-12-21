@@ -1,8 +1,7 @@
 # Markkoh.net v4 dawg!
 Oh hey it's Mark's website!
-Previously PHP based, I've made the move over to AngularJS, my new go-to for
-front-end development.  Since my website doesn't really need a backend there's
-no point in going through the pain of dealing with PHP, hence the migration.
+Previously PHP based, I've made the move over to AngularJS.
+Since my website doesn't really need a backend there's no point in going through the pain of dealing with PHP, hence the migration.
 
 Directives are king!
 
@@ -26,6 +25,12 @@ The evolution:
 
 
 #### How the heck do I run this thing?
+Install node, bower, and gulp
+```
+$ brew install node
+$ npm install -g bower gulp
+```
+
 - Install Node and NPM
 - From the root dir, run
 ```

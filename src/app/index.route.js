@@ -47,7 +47,9 @@
       })
       .state('default.contact', {
         url: '/contact',
-        templateUrl: 'app/contact/contact.html'
+        templateUrl: 'app/contact/contact.html',
+        controller: 'ContactController',
+        controllerAs: 'vm'
       })
       ;
 
